@@ -6,6 +6,7 @@ import MyProjects from "./components/MyProjects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Galaxy from "./components/Galaxy";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       </div>
       {/* Website content */}
       <div >
+       <Navbar />
         <Hero />
         <AboutMe />
         <Skills />

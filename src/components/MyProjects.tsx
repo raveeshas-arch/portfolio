@@ -1,5 +1,9 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Img1 from '../assets/agency.png'
+import Img2 from '../assets/animal.jpeg'
+import Img3 from '../assets/panda.png'
+import Img4 from '../assets/Picture1.png'
 
 // Replace these with your actual projects
 const projects = [
@@ -7,22 +11,29 @@ const projects = [
     title: "E-Commerce Web App",
     description: "A full stack e-commerce application built with MERN stack.",
     github: "https://github.com/yourusername/ecommerce",
-    live: "https://ecommerce.example.com",
-    icon: "/assets/icons/ecommerce.png", // optional project icon
+    live: "#",
+    icon: Img1, 
   },
   {
     title: "Task Manager",
     description: "A task management app with authentication and REST APIs.",
     github: "https://github.com/yourusername/task-manager",
     live: "https://taskmanager.example.com",
-    icon: "/assets/icons/task.png",
+    icon: Img2,
   },
   {
     title: "Portfolio Website",
     description: "My personal portfolio website showcasing my projects and skills.",
     github: "https://github.com/yourusername/portfolio",
     live: "https://yourportfolio.com",
-    icon: "/assets/icons/portfolio.png",
+    icon: Img3,
+  },
+  {
+    title: "Portfolio Website",
+    description: "My personal portfolio website showcasing my projects and skills.",
+    github: "https://github.com/yourusername/portfolio",
+    live: "https://yourportfolio.com",
+    icon: Img4,
   },
 ];
 
@@ -30,17 +41,23 @@ const MyProjects = () => {
   return (
     <section className="relative w-full px-6 sm:px-12 py-20 bg-transparent text-white">
       <div className="max-w-6xl mx-auto text-center">
-        <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-[#00ffe5] mb-12"
-          initial={{ opacity: 0, y: 20 }}
+       <motion.div
+          className="flex-1 space-y-6"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          My Projects
-        </motion.h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold flex justify-center gap-2 mt-4 mb-4">
+              <span className="text-[#00ffe5]">My</span>
+              <span className="bg-gradient-to-r from-[#00ffe5] via-[#00bfff] to-[#0077ff] bg-clip-text text-transparent">
+               Projects
+              </span>
+            </h2>
+          </div>
+</motion.div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1200px] gap-8 mt-10">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -55,7 +72,7 @@ const MyProjects = () => {
                 <img
                   src={project.icon}
                   alt={project.title}
-                  className="w-12 h-12 object-contain mb-2"
+                  className="w-100 h-auto object-contain mb-2"
                 />
               )}
 

@@ -6,6 +6,7 @@ import {
   SiJavascript, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiSpringboot, SiExpress
 } from "react-icons/si";
 
+
 const skillsTree = [
   {
     category: "Frontend",

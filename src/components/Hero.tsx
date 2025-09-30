@@ -1,60 +1,51 @@
+import { motion } from "framer-motion";
+import me from "../assets/img1.png"; // replace with your image
 
-import img1 from '../assets/img1.png'
-
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <section className="relative mx-auto flex min-h-screen w-full max-w-[1920px] items-center justify-center px-6 sm:px-12">
-      <div className="flex w-full flex-col-reverse items-center justify-between  max-w-[1500px] sm:flex-row sm:gap-6">
+    <section className="relative w-full min-h-screen bg-transparent px-6 sm:px-12 flex items-center max-w-[1920px] mx-auto">
+      <div className=" mx-auto xl:max-w-[1000px] flex flex-col lg:flex-row items-center justify-between ">
         
-        {/* Left Side Text */}
-        <div className="z-10 flex flex-col items-center text-center text-black sm:items-start sm:text-left">
-          <p className="text-2xl font-semibold sm:text-3xl md:text-4xl 2xl:text-5xl">
-            Hello
-          </p>
-          <p className="text-2xl font-semibold sm:text-3xl md:text-4xl 2xl:text-5xl">
-            I&apos;m Raveesha Nethsarani
-          </p>
-
-          <h1 className="mt-3 text-3xl font-bold uppercase text-black sm:text-4xl md:text-5xl 2xl:text-7xl">
-            Full Stack Developer
+        {/* Left Content */}
+        <motion.div
+          className="flex-1 text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="text-4xl sm:text-5xl font-bold text-[#00ffe5] mb-4">
+            Hi, I'm Raveesha Nethsarani
           </h1>
+          <p className="text-gray-300 text-lg sm:text-xl mb-6">
+            I'm a Full Stack Developer passionate about building scalable and
+            meaningful digital solutions. I specialize in MERN stack and
+            Java-based backend development.
+          </p>
+          <a
+            href="#contact"
+            className="inline-block px-6 py-3 bg-[#00ffe5] text-black font-semibold rounded-lg shadow-lg hover:bg-[#00d4c2] transition"
+          >
+            Contact Me
+          </a>
+        </motion.div>
 
-          {/* Buttons */}
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-3xl px-8 py-3 text-base font-semibold text-black border transition-all duration-300 hover:scale-105 ">
-              Download CV
-            </button>
-            <button className="cursor-pointer rounded-3xl border border-black px-8 py-3 text-base font-semibold text-black transition ">
-              Contactc
-            </button>
-          </div>
-        </div>
-
-        {/* Right Side Image */}
-        <div className="animate-border-spin relative w-[220px] rounded-full p-[4px] sm:w-[280px] md:w-[330px] lg:w-[380px]">
-          <style>
-            {`
-              @keyframes border-spin {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
-              }
-              .animate-border-spin {
-                background-size: 200% 200%;
-                animation: border-spin 4s linear infinite;
-              }
-            `}
-          </style>
-
+        {/* Right Image */}
+        <motion.div
+          className="flex-1 flex justify-center lg:justify-end"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <img
-            src={img1}
-            alt="Profile"
-            className="h-full w-full rounded-full bg-white object-cover p-2"
+            src={me}
+            alt="Raveesha Nethsarani"
+            className="w-full max-w-sm lg:max-w-md rounded-2xl shadow-xl"
           />
-        </div>
+        </motion.div>
+
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default HeroSection;

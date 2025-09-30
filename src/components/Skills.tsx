@@ -22,7 +22,7 @@ const fadeUp = {
 
 const Skills = () => {
   return (
-    <section className="px-6 md:px-12 ">
+    <section id='skills' className="px-6 md:px-12 ">
      <div className="text-center">
             <h2 className="text-3xl sm:text-4xl font-bold flex justify-center gap-2 mt-4 mb-4">
               <span className="text-[#00ffe5]">My</span>

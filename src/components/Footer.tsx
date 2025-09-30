@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex gap-6 text-gray-400  ">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/raveeshas-arch"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#00ffe5] transition-colors text-2xl cursor-pointer"
@@ -24,7 +24,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/raveesha-nethsarani-178962291?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHrZQEIK2QkGgz1nDuIBbDw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#00ffe5] transition-colors text-2xl cursor-pointer"
@@ -40,7 +40,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="raveeshanethsarani963@gmail.com"
             className="hover:text-[#00ffe5] transition-colors text-2xl cursor-pointer"
           >
             <FaEnvelope />

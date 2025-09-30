@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <section className="relative w-full px-6 sm:px-12 py-20 bg-transparent text-white">
+    <section id="about" className="relative w-full px-6 sm:px-12 sm:py-10 bg-transparent text-white">
       <div className="max-w-5xl mx-auto">
         
         {/* Text */}

@@ -3,7 +3,7 @@ import me from "../assets/img1.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen bg-transparent px-6 sm:px-12 flex items-center  mt-30 lg:mt-0">
+    <section id="home" className="relative w-full min-h-screen bg-transparent px-6 sm:px-12 flex items-center  pt-20 lg:pt-0">
       <div className=" mx-auto xl:max-w-[1000px]  flex flex-col lg:flex-row items-center justify-between ">
         
         {/* Left Content */}

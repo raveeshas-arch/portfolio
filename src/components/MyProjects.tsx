@@ -8,38 +8,38 @@ import Img4 from '../assets/Picture1.png'
 // Replace these with your actual projects
 const projects = [
   {
-    title: "E-Commerce Web App",
-    description: "A full stack e-commerce application built with MERN stack.",
-    github: "https://github.com/yourusername/ecommerce",
+    title: "Agency Website",
+    description: "A Web Application Create using reactjs ",
+    github: "#",
     live: "#",
     icon: Img1, 
   },
   {
-    title: "Task Manager",
-    description: "A task management app with authentication and REST APIs.",
-    github: "https://github.com/yourusername/task-manager",
-    live: "https://taskmanager.example.com",
+    title: "Animal Clinic website",
+    description: "A full stack e-commerce application built with MERN stack..",
+    github: "#",
+    live: "#",
     icon: Img2,
   },
   {
-    title: "Portfolio Website",
-    description: "My personal portfolio website showcasing my projects and skills.",
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.com",
+    title: "Token Website",
+    description: "A Web Application Create using reactjs ",
+    github: "#",
+    live: "#",
     icon: Img3,
   },
   {
-    title: "Portfolio Website",
-    description: "My personal portfolio website showcasing my projects and skills.",
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://yourportfolio.com",
+    title: "Restourant Website",
+    description: "A website create using HTML CSS and JavaScript.",
+    github: "#",
+    live: "#",
     icon: Img4,
   },
 ];
 
 const MyProjects = () => {
   return (
-    <section className="relative w-full px-6 sm:px-12 py-20 bg-transparent text-white">
+    <section id="projects" className="relative w-full px-6 sm:px-12 py-20 bg-transparent text-white">
       <div className="max-w-6xl mx-auto text-center">
        <motion.div
           className="flex-1 space-y-6"

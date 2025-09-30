@@ -23,15 +23,15 @@ const fadeUp = {
 const Skills = () => {
   return (
     <section id='skills' className="px-6 md:px-12 ">
-     <div className="text-center">
+     <div className="text-center ">
             <h2 className="text-3xl sm:text-4xl font-bold flex justify-center gap-2 mt-4 mb-4">
               <span className="text-[#00ffe5]">My</span>
-              <span className="bg-gradient-to-r from-[#00ffe5] via-[#00bfff] to-[#0077ff] bg-clip-text text-transparent">
+              <span className="font-raleway bg-gradient-to-r from-[#00ffe5] via-[#00bfff] to-[#0077ff] bg-clip-text text-transparent">
                Skills
               </span>
             </h2>
           </div>
-      <div className="grid md:grid-cols-2 gap-10 max-w-[1200px] justify-center mx-auto px-auto mt-10">
+      <div className="grid md:grid-cols-2 gap-10 max-w-[1200px] justify-center mx-auto px-auto mt-10 sm:mt-20">
         <SkillCategory title="Frontend" icon={<FaCode className="text-blue-500" />} skills={[
           { Icon: SiHtml5, label: "HTML5" },
           { Icon: SiCss3, label: "CSS3" },

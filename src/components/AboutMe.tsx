@@ -17,14 +17,14 @@ const AboutMe = () => {
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl font-bold flex justify-center gap-2 mt-4 mb-4">
               <span className="text-[#00ffe5]">About</span>
-              <span className="bg-gradient-to-r from-[#00ffe5] via-[#00bfff] to-[#0077ff] bg-clip-text text-transparent">
+              <span className="font-raleway bg-gradient-to-r from-[#00ffe5] via-[#00bfff] to-[#0077ff] bg-clip-text text-transparent">
                 Me
               </span>
             </h2>
           </div>
 
           {/* Paragraphs */}
-          <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
+          <p className=" font-roboto text-gray-300 text-lg sm:text-xl leading-relaxed">
             I'm a 23-year-old Higher National Diploma in Information Technology student from Sri Lanka, currently studying at the Sri Lanka Institute of Advanced Technological Education (ATI) in Galle. Alongside my academic journey, I'm further enhancing my skills in full stack development at Certix Institute.
           </p>
           <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">

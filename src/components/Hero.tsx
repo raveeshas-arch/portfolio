@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import me from "../assets/img1.png"; 
+import cvFile from "../assets/cvvv.pdf"; // Import your CV PDF
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
         
         {/* Left Content */}
         <motion.div
-          className="flex-1 lg:text-left text-center  "
+          className="flex-1 lg:text-left text-center"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -21,24 +22,32 @@ const HeroSection = () => {
             meaningful digital solutions. I specialize in MERN stack backend development.
           </p>
           <div className="flex gap-5 justify-center lg:justify-start">
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 bg-[#00ffe5] text-black font-semibold rounded-lg shadow-lg hover:bg-[#00d4c2] transition"
-          >
-            Contact Me
-          </a>
+            <a
+              href="#contact"
+              className="inline-block px-6 py-3 bg-[#00ffe5] text-black font-semibold rounded-lg shadow-lg hover:bg-[#00d4c2] transition"
+            >
+              Contact Me
+            </a>
 
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 border-white text-white  border-2 font-semibold rounded-lg shadow-lg hover:bg-[#00d4c2] transition hover:text-black hover:border-[#00d4c2]"
-          >
-           Download CV
-          </a>
+            <a
+              href={cvFile} // Use the imported PDF
+              download
+              className="inline-block px-6 py-3 border-white text-white border-2 font-semibold rounded-lg shadow-lg hover:bg-[#00d4c2] transition hover:text-black hover:border-[#00d4c2]"
+            >
+              Download CV
+            </a>
           </div>
         </motion.div>
 
         {/* Right Image */}
-       <motion.div className="flex-1 flex justify-center lg:justify-end " initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} > <img src={me} alt="Raveesha Nethsarani" className=" w-full md:max-w-[500px] h-auto lg:max-w-md shadow-2xl rounded-full py-3 mt-10 lg:mt-0" /> </motion.div>
+        <motion.div 
+          className="flex-1 flex justify-center lg:justify-end" 
+          initial={{ opacity: 0, x: 50 }} 
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 1 }} 
+        > 
+          <img src={me} alt="Raveesha Nethsarani" className="w-full md:max-w-[500px] h-auto lg:max-w-md shadow-2xl rounded-full py-3 mt-10 lg:mt-0" /> 
+        </motion.div>
 
       </div>
     </section>
